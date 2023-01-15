@@ -1,3 +1,6 @@
 first  add
 
 second add
+
+git rm file  //删除仓库中的文件，并且连本地都删掉了
+git rm --cached  file  //只删除仓库中的文件，但是不删除本地的文件
