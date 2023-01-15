@@ -11,6 +11,8 @@ git log / git log name  / git log -p
 
 git reset
 
+git branch -a  //显示远程的分支
+
 git checkout -d  filename //删除分支
 
 git checkout -D filename //删除没有进行过合并的分支
@@ -37,3 +39,6 @@ git rebase  master
 在master分支处
 git merge ask
 
+git remote -v
+git remote origin ${ssh}  //进行远程连接
+git push --ser-upstrem origin ask //为github创建一个分支
