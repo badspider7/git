@@ -40,5 +40,5 @@ git rebase  master
 git merge ask
 
 git remote -v
-git remote origin ${ssh}  //进行远程连接
+git remote add origin git@github.com:badspider7/git.git //进行远程连接
 git push --ser-upstrem origin ask //为github创建一个分支
