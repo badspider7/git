@@ -1,7 +1,3 @@
-first  add
-
-second add
-
 git rm file  //删除仓库中的文件，并且连本地都删掉了
 git rm --cached  file  //只删除仓库中的文件，但是不删除本地的文件
 
@@ -18,3 +14,18 @@ git reset
 git checkout -d  filename //删除分支
 
 git checkout -D filename //删除没有进行过合并的分支
+
+在一个分支里面，文件改了一半，还没有commit ，但是必须要切换到另一个分支，这个时候可以用 
+git stash
+git stash apply stash@{0} //恢复临时存储区
+git stash list  //列出所有的临时存储区
+git stash  drop stach@{0}  //删除这个临时存储区
+
+
+打标签 tag
+git tag   //显示所有的标签
+git tag v1.0  //打标签 
+
+
+生成压缩包
+git archive master --prefix='hdcms/'(生成的文件夹) --forma=zip > hdcms.zpi
