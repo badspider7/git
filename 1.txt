@@ -29,3 +29,11 @@ git tag v1.0  //打标签
 
 生成压缩包
 git archive master --prefix='hdcms/'(生成的文件夹) --forma=zip > hdcms.zpi
+
+创建新的分支时，主分支发生了改变，这个时候合并就会产生冲突，就需要rebase  把新分支的基点移到主分支的新基点处
+
+在ask分支处
+git rebase  master
+在master分支处
+git merge ask
+
