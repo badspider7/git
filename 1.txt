@@ -15,4 +15,6 @@ git log / git log name  / git log -p
 
 git reset
 
-git checkout -d //删除分支
+git checkout -d  filename //删除分支
+
+git checkout -D filename //删除没有进行过合并的分支
