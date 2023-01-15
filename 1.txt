@@ -12,4 +12,7 @@ git config --global alias.a   add  //更改操作的别名
 
 
 git log / git log name  / git log -p
+
 git reset
+
+git checkout -d //删除分支
